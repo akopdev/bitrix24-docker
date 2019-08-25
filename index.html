@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+    <html class="no-js lt-ie9 lt-ie8 lt-ie7"> 
+<![endif]-->
+<!--[if IE 7]>         
+    <html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>         
+    <html class="no-js lt-ie9"> 
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Bitrix24 Docker - Ready Docker enviroment for Bitrix projects</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,400,500,700|Oswald&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bundle.min.css">
+</head>
+
+<body>
+    <div id="stick-menu"></div>
+    <header id="st-header-section" class="st_header_area sticky-bg-lochmara st_header_btn">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6 col-xs-6 d-flex align-items-center">
+                    <div class="st_logo"><a href="/" class="text-white"><i class="fab fa-docker"></i> Bitrix24
+                            Docker</a>
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-6 col-sm-6 col-xs-6 d-flex justify-content-end">
+                    <div class="st_nav_wrapper st-mean-white">
+                        <div class="st_menu text-st-white">
+                            <ul>
+                                <li><a href="#home">Главная</a></li>
+                                <li><a href="#features">Преимущества</a></li>
+                                <li><a href="#usecases">Для кого</a></li>
+                                <li><a href="#docs">Быстрый старт</a></li>
+                                <li class="m-l-none">
+                                    <a href="#"
+                                        class="st_default_btn sing_in bg-emerald st_btn_round m-l-40 m-lg-l-none">Скачать</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End row -->
+        </div>
+        <!--End container -->
+    </header>
+    <!--End st_header_area -->
+    <section id="home" class="st_banner_area left-angle-shape bg-lochmara m-b-70">
+        <div class="container">
+            <div class="row">
+                <div
+                    class="col-12 d-flex justify-content-center align-items-end height-100vh st-min-1150 st-min-sm-850">
+                    <div class="st_banner_waraper text-center m-t-100 m-md-b-50 m-sm-b-75">
+                        <div class="st_banner_content m-b-none">
+                            <h1 class="m-b-35 font-weight-normal text-st-white st-font-sm-34 br-sm-none">Bitrix24
+                                Docker<br>Готовое веб-окружение для Битрикс проектов</h1><a
+                                class="st_default_btn bg-emerald st_btn_round m-sm-r-15" href="#">Скачать бесплатно</a>
+                            <a class=" st_default_btn st_icon_btn int-link" href="#docs"><i
+                                    class="far fa-file-alt mr-2"></i>
+                                Быстрый старт
+                            </a>
+                        </div>
+                        <div class="st_banner_single_img p-md-t-110 p-xs-t-50 fadeInUp" data-wow-delay="0.3s">
+                            <div class="shell-container">
+                                <div id="shell"></div>
+                            </div>
+                            <img src="assets/images/v8/banner-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End row -->
+        </div>
+        <!--End container -->
+        <div class="st_left_shape wow"><span></span> <span></span> <span></span></div>
+    </section>
+
+
+    <!--End st_banner_area -->
+    <div id="features" class="st_feature_area st_section_padding top_0 p-md-b-40">
+        <div class="container">
+            <div class="st_section_heding_title">
+                <p class="text-lochmara">ПРЕИМУЩЕСТВА</p>
+                <h2>Используйте Bitrix24 Docker если вам необходима</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 margin_bottom">
+                    <div class="st_feature_item_v2 fadeIn" data-wow-delay="0.3s"><i class="fas fa-rocket"></i>
+                        <h3>Скорость</h3>
+                        <p>Быстро развернуть масштабируемое веб окружение для разработки и хостинга Битрикс проектов
+                            любой редакции.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="st_feature_item_v2 fadeIn" data-wow-delay="0.7s"><i class="fab fa-angellist"></i>
+                        <h3>Простота</h3>
+                        <p>Тратьте время на программирование, а не на настройку окружения. Одной командой вы
+                            запустите готовую инфраструктуру под проект.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="st_feature_item_v2 fadeIn" data-wow-delay="0.5s"><i class="fas fa-cubes"></i>
+                        <h3>Гибкость</h3>
+                        <p>Дополните базовый образ Bitrix24 Docker собственными службами, или подключайте готовые
+                            контейнеры всего
+                            одной строчкой в конфиге. </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="st_feature_item_v2 fadeIn" data-wow-delay="0.3s"><i class="fas fa-robot"></i>
+                        <h3>Масштабирование</h3>
+                        <p>Автоматизируйте поставку кода на ваш production сервер, запускайте автотесты и анализируйте
+                            работу кода на разных версиях проекта.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!--End row -->
+        </div>
+        <!--End container -->
+    </div>
+    <!--End st_v8_feature_area -->
+    <div id="usecases" class="st_about_inner_page st_about_padding st-position-wrap">
+        <div class="st_about_top bg-polar top-bottom-angle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 offset-lg-1 order-lg-2 d-flex justify-content-center align-items-center">
+                        <article class="st_default_content fadeInRight" data-wow-delay="0.4s">
+                            <h2>Разработчикам</h2>
+                            <p>Одной командой вы получаете готовую локальную инфраструктуру, включая все сервера и базы данных, а разработанных код будет одинаково работать на dev и production средах.</p>
+
+                            <p>Вы по-прежнему можете использовать привычные для вас инструменты (phpMyAdmin,
+                                xDebug, Codeception и т.д.), локально запускать тесты, экспериментировать с версиями кода и
+                                многое другое.</p>
+                            <a class="st_default_btn bg-lochmara  st_btn_round" href="#">Примеры использования</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="st_about_right_item m-md-t-50 st-text-md-center fadeInLeft" data-wow-delay="0.3s">
+                            <img src="assets/images/v8/development.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--End row -->
+            </div>
+            <!--End container -->
+        </div>
+        <div class="st_about_bottom p-lg-t-b-75">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 d-flex align-items-center">
+                        <article class="st_default_content fadeInLeft" data-wow-delay="0.3s">
+                            <h2>DevOps инженерам</h2>
+                            <p>Используйте все преимущества CI/CD теперь и с Битрикс. Bitrix24 Docker
+                                включает все специфические для Битрикс24 службы, с официально рекомендованными настройками, поэтому можно больше не переживать за совместимость с bitrix-env.
+                            </p>
+                            <p>Управляйте нагрузкой
+                                и масштабируйте проект в кластерах. Используйте переменные окружения для
+                                запуска одного контейнера с разными параметрами.</p>
+                            <a class="st_default_btn bg-lochmara  st_btn_round" href="#">Примеры
+                                использования</a>
+                        </article>
+                    </div>
+                    <div
+                        class="col-lg-5 d-flex d-md-block justify-content-end align-items-center m-md-t-50 st-text-md-center">
+                        <div class="st_about_right_item fadeInRight" data-wow-delay="0.4s"><img
+                                src="assets/images/v8/devops.png" alt=""></div>
+                    </div>
+                </div>
+                <!--End row -->
+            </div>
+            <!--End container -->
+        </div>
+        <div class="st_left_about_shape wow"><span></span> <span></span> <span></span></div>
+    </div>
+    <!--End st_v2_about_area -->
+
+    <div
+        class="st_online_community_area bg-chambray top-bottom-angle st-position-wrap p-t-b-350 p-lg-t-175 p-lg-b-225 p-md-t-130 p-md-b-225 p-sm-t-b-80">
+        <div class="container">
+            <div class="st_online_community_waraper">
+                <div class="st_online_community_content text-center">
+                    <h2 class="font-weight-normal m-b-50 text-st-white st-font-34 st-font-sm-28">Bitrix24-Docker
+                        подойдет для проектов любого размера. <br>Если вам нужна консультация или помощь во внедрении
+                        DevOps практик в вашей организации, напишите мне.</h2>
+                    <a class="st_default_btn bg-emerald bg-hover-st-aqua st_btn_round" href="#">Связаться с автором</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="docs" class="st_event_area footer-subscription-wrapper">
+        <div class="container position-relative">
+            <div class="st_single_event short-width-content text-center st-width-sm-100">
+                <p class="text-lochmara">Присоединяйтесь к проекту</p>
+                <h3 class="text-st-primary st-font-28 m-b-40 font-weight-bold st-font-sm-22"><span
+                        class="text-haiti">Bitrix24 Docker</span> это проект с открытым исходным кодом. Присоединяйтесь
+                    к нашему сообществу, ставьте звездочки и подписывайтесь на обновления.</h3>
+                <a href="https://github.com/akopkesheshyan/bitrix24-docker"
+                    class="st_default_btn bg-emerald bg-hover-st-aqua app_store" style="background: #24292e !important">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://hub.docker.com/r/akopkesheshyan/bitrix24"
+                    class="st_default_btn bg-lochmara bg-hover-st-aqua st_google_paly">
+                    <i class="fab fa-docker"></i> Docker Hub
+                </a>
+
+            </div>
+            <div class="st_footer_subscriber fadeInUp" data-wow-delay="0.3s">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="st_faq_item st_faq_bottom">
+                            <div class="st_faq_single_item"><i class="fas fa-rocket"></i>
+                                <h3>Быстрый старт</h3>
+                            </div>
+                            <ol>
+                                <li>Скачайте <u><a href="/docker-compose.yml">docker-compose.yml</a></u> и скопируйте в
+                                    директорию вашего проекта</li>
+                                <li>Откройте консоль и выполните команду <b>docker-compose up -d</b></li>
+                                <li>В браузере перейдите по адресу <u><a
+                                            href="http://localhost">http://localhost/</a></u></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="st_faq_item st_faq_bottom">
+                            <div class="st_faq_single_item"><i class="fas fa-question-circle"></i>
+                                <h3>Другие сценарии запуска</h3>
+                            </div>
+                            <p>На <a href="https://github.com/akopkesheshyan/bitrix24-docker/wiki">GitHub Wiki</a> вы
+                                найдете подробные инструкции по установке и настройке Bitrix24-Docker для разных
+                                окружений и сценариев использования.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--- End container -->
+    </div>
+    <!--- End st_event_area -->
+    <footer class="st_default_footer_area st_footer_variation st_subscribe_fotter p-t-200 bg-haiti footer-angle">
+        <div class="container">
+            <div class="row st_fotter_border_bottom st_fotter_border_bottom_v2">
+                <div
+                    class="col-xl-3 col-lg-6 d-flex d-lg-flex d-sm-block d-xs-block justify-content-start align-items-center">
+                    <div class="st_footer_logo_warap m-b-none"></div>
+                </div>
+                <div
+                    class="col-xl-3 col-lg-6 order-xl-3 d-flex d-lg-flex justify-content-end align-items-cente d-sm-block d-xs-block m-md-t-80 m-sm-t-50 st-font-sm-left">
+
+                </div>
+                <div
+                    class="col-xl-6 col-lg-12 d-flex d-lg-flex d-sm-block d-xs-block justify-content-center align-items-center m-lg-t-80 m-sm-t-50">
+                    <div class="st_fotter_menu text-st-white st_fotter_menu_inline mean-nav">
+                        <ul>
+                            <li><a href="#home">Главная</a></li>
+                            <li><a href="#features">Преимущества</a></li>
+                            <li><a href="#usecases">Для кого</a></li>
+                            <li><a href="#docs">Быстрый старт</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--- End row -->
+            <div class="st_copyright_content text-center p-b-60">
+                <p>
+                    Made with <span class="icon is-small"><i class="fas fa-heart"></i></span> by
+                    Akop Kesheshyan.
+                </p>
+            </div>
+        </div>
+        <!--- End container -->
+        <div class="st_left_about_shape wow"><span></span> <span></span> <span></span></div>
+    </footer>
+    <!--- End st_default_footer_area -->
+    <script src="assets/js/bundle.min.js"></script><!-- End All Js -->
+    <script src="assets/js/custom.js"></script><!-- End All Js -->
+</body>
+
+</html>

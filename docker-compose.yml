@@ -1,0 +1,31 @@
+version: '3'
+services:
+  web:
+    image: "akopkesheshyan/bitrix24:latest"
+    ports:
+      - "80:80"
+      - "443:443"
+    cap_add:
+      - SYS_ADMIN 
+    security_opt:
+      - seccomp:unconfined
+    privileged: true
+    volumes:
+      - ./:/home/bitrix/www/local
+    depends_on:
+      - mysql
+  mysql:
+    image: mariadb
+    healthcheck:
+      test: "/usr/bin/mysql --user=root --password=+Tr+()8]!szl[HQIsoT5 --execute \"SHOW DATABASES;\""
+      interval: 2s
+      timeout: 20s
+      retries: 10
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: +Tr+()8]!szl[HQIsoT5
+      MYSQL_DATABASE: sitemanager
+      MYSQL_USER: bitrix
+      MYSQL_PASSWORD: +Tr+()8]!szl[HQIsoT5
+    command: ['--character-set-server=utf8', '--collation-server=utf8_unicode_ci', '--skip-character-set-client-handshake', '--sql-mode=']   
