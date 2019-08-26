@@ -14,7 +14,7 @@
       host: "local",
       theme: "light",
       responsive: true,
-      commands: ["curl https://akopkesheshyan.github.io/bitrix24-docker/docker-compose.yml > docker-compose.yml", "docker-compose up -d"]
+      commands: ["curl https://bitrix24-docker.ru/docker-compose.yml > docker-compose.yml", "docker-compose up -d"]
     });
   });
 
